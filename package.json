@@ -1,0 +1,39 @@
+{
+  "name": "restful_node",
+  "version": "1.0.0",
+  "description": "API RESTful web services with node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-tinoco/restful_node.git"
+  },
+  "author": "Daniel E Tinoco Lara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniel-tinoco/restful_node/issues"
+  },
+  "homepage": "https://github.com/daniel-tinoco/restful_node#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay" : "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
