@@ -2,7 +2,7 @@
   "name": "restful_node",
   "version": "1.0.0",
   "description": "API RESTful web services with node",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
     "lint": "eslint",
@@ -20,20 +20,22 @@
   "homepage": "https://github.com/daniel-tinoco/restful_node#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "mongoose": "^5.4.18",
     "nodemon": "^1.18.10"
   },
   "devDependencies": {
-    "eslint": "^5.15.1"
+    "eslint": "^5.15.1",
+    "standard": "^12.0.1"
   },
   "nodemonConfig": {
     "restartable": "rs",
     "ignore": [
       "node_modules/**/node_modules"
     ],
-    "delay" : "2500",
+    "delay": "2500",
     "env": {
       "NODE_ENV": "development",
-      "PORT": 4000
+      "PORT": 3001
     }
   }
 }
